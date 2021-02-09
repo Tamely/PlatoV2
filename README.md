@@ -10,7 +10,7 @@ Project Plato... but better
  - My Discord username: Tamely#9111
 # Credits
  - @TamelyFN on Twitter
- - @Tamely#9111 on Discord
+ - @Tamely#6469 on Discord
 # Features
  - Installer
  - Updater

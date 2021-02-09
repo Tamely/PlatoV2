@@ -20,4 +20,4 @@ Project Plato... but better
 # Requirements
 This order also applies in the startup order.
 
-Visual Studio or any C# IDE
+Visual Studio or any C# IDE (I prefer Jetbrains Rider)

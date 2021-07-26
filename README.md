@@ -17,7 +17,7 @@ The most advanced Fortnite Skin Changer to this date.
  - Works on some old versions of Fortnite
  - Modern and clean design
  - Safe/secure loader (closes all Epic processes upon launch)
- - Json API based (developer mode, news/content, etc.)
+ - JSON Base API (developer mode, news/content, etc.)
 # Requirements
 This order also applies in the startup order.
 

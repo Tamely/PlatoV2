@@ -22,4 +22,5 @@ The most advanced Fortnite Skin Changer to this date.
 This order also applies in the startup order.
 
 [.NET Core 3.1](https://dotnet.microsoft.com/download/dotnet/thank-you/runtime-desktop-3.1.17-windows-x64-installer ".NET Core Download Page")
+
 [Visual Studio](https://visualstudio.microsoft.com/) or any C# IDE (I prefer [Jetbrains Rider](https://www.jetbrains.com/rider/))

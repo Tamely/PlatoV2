@@ -90,13 +90,6 @@ namespace ProjectPlatoV2.Classes
             var client = new RestClient(url) {Timeout = -1};
             var request = new RestRequest(Method.GET);
             String Key = "\u0701\u06A1\u08C1\u06A1\u0601\u0841\u0621\u0881\u0661\u0621";
-            for (int QUEVe = 0, jCARG = 0; QUEVe < 10; QUEVe++)
-            {
-                jCARG = Key[QUEVe];
-                jCARG --;
-                jCARG = (((jCARG & 0xFFFF) >> 5) | (jCARG << 11)) & 0xFFFF;
-                Key = Key.Substring(0, QUEVe) + (char)(jCARG & 0xFFFF) + Key.Substring(QUEVe + 1);
-            }
             request.AddHeader("ApiKey", Key);
             request.AlwaysMultipartFormData = true;
             IRestResponse response = client.Execute(request);

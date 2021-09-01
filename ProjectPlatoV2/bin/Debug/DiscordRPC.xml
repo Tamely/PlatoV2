@@ -233,21 +233,21 @@
         </member>
         <member name="M:DiscordRPC.DiscordRpcClient.UpdateDetails(System.String)">
             <summary>
-            Updates only the <see cref="P:DiscordRPC.RichPresence.Details"/> of the <see cref="P:DiscordRPC.DiscordRpcClient.CurrentPresence"/> and sends the updated presence to Discord. Returns the newly edited Rich Presence.
+            Updates only the <see cref="P:DiscordRPC.BaseRichPresence.Details"/> of the <see cref="P:DiscordRPC.DiscordRpcClient.CurrentPresence"/> and sends the updated presence to Discord. Returns the newly edited Rich Presence.
             </summary>
             <param name="details">The details of the Rich Presence</param>
             <returns>Updated Rich Presence</returns>
         </member>
         <member name="M:DiscordRPC.DiscordRpcClient.UpdateState(System.String)">
             <summary>
-            Updates only the <see cref="P:DiscordRPC.RichPresence.State"/> of the <see cref="P:DiscordRPC.DiscordRpcClient.CurrentPresence"/> and sends the updated presence to Discord. Returns the newly edited Rich Presence.
+            Updates only the <see cref="P:DiscordRPC.BaseRichPresence.State"/> of the <see cref="P:DiscordRPC.DiscordRpcClient.CurrentPresence"/> and sends the updated presence to Discord. Returns the newly edited Rich Presence.
             </summary>
             <param name="state">The state of the Rich Presence</param>
             <returns>Updated Rich Presence</returns>
         </member>
         <member name="M:DiscordRPC.DiscordRpcClient.UpdateParty(DiscordRPC.Party)">
             <summary>
-            Updates only the <see cref="P:DiscordRPC.RichPresence.Party"/> of the <see cref="P:DiscordRPC.DiscordRpcClient.CurrentPresence"/> and sends the updated presence to Discord. Returns the newly edited Rich Presence.
+            Updates only the <see cref="P:DiscordRPC.BaseRichPresence.Party"/> of the <see cref="P:DiscordRPC.DiscordRpcClient.CurrentPresence"/> and sends the updated presence to Discord. Returns the newly edited Rich Presence.
             </summary>
             <param name="party">The party of the Rich Presence</param>
             <returns>Updated Rich Presence</returns>
@@ -1507,46 +1507,52 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="T:DiscordRPC.RichPresence">
+        <member name="T:DiscordRPC.BaseRichPresence">
             <summary>
-            The Rich Presence structure that will be sent and received by Discord. Use this class to build your presence and update it appropriately.
+            The base rich presence structure
             </summary>
         </member>
-        <member name="P:DiscordRPC.RichPresence.State">
+        <member name="P:DiscordRPC.BaseRichPresence.State">
             <summary>
-            The user's current <see cref="P:DiscordRPC.RichPresence.Party"/> status. For example, "Playing Solo" or "With Friends".
+            The user's current <see cref="P:DiscordRPC.BaseRichPresence.Party"/> status. For example, "Playing Solo" or "With Friends".
             <para>Max 128 bytes</para>
             </summary>
         </member>
-        <member name="P:DiscordRPC.RichPresence.Details">
+        <member name="F:DiscordRPC.BaseRichPresence._state">
+            <summary>Inernal inner state string</summary>
+        </member>
+        <member name="P:DiscordRPC.BaseRichPresence.Details">
             <summary>
             What the user is currently doing. For example, "Competitive - Total Mayhem".
             <para>Max 128 bytes</para>
             </summary>
         </member>
-        <member name="P:DiscordRPC.RichPresence.Timestamps">
+        <member name="F:DiscordRPC.BaseRichPresence._details">
+            <summary>Inernal inner detail string</summary>
+        </member>
+        <member name="P:DiscordRPC.BaseRichPresence.Timestamps">
             <summary>
             The time elapsed / remaining time data.
             </summary>
         </member>
-        <member name="P:DiscordRPC.RichPresence.Assets">
+        <member name="P:DiscordRPC.BaseRichPresence.Assets">
             <summary>
             The names of the images to use and the tooltips to give those images.
             </summary>
         </member>
-        <member name="P:DiscordRPC.RichPresence.Party">
+        <member name="P:DiscordRPC.BaseRichPresence.Party">
             <summary>
             The party the player is currently in. The <see cref="P:DiscordRPC.Party.ID"/> must be set for this to be included in the RichPresence update.
             </summary>
         </member>
-        <member name="P:DiscordRPC.RichPresence.Secrets">
+        <member name="P:DiscordRPC.BaseRichPresence.Secrets">
             <summary>
             The secrets used for Join / Spectate. Secrets are obfuscated data of your choosing. They could be match ids, player ids, lobby ids, etc. Make this object null if you do not wish too / unable too implement the Join / Request feature.
             <para>To keep security on the up and up, Discord requires that you properly hash/encode/encrypt/put-a-padlock-on-and-swallow-the-key-but-wait-then-how-would-you-open-it your secrets.</para>
             <para>Visit the <see href="https://discordapp.com/developers/docs/rich-presence/how-to#secrets">Rich Presence How-To</see> for more information.</para>
             </summary>
         </member>
-        <member name="P:DiscordRPC.RichPresence.Instance">
+        <member name="P:DiscordRPC.BaseRichPresence.Instance">
             <summary>
             Marks the <see cref="P:DiscordRPC.Secrets.MatchSecret"/> as a game session with a specific beginning and end. It was going to be used as a form of notification, but was replaced with the join feature. It may potentially have use in the future, but it currently has no use.
             <para>
@@ -1554,91 +1560,31 @@
                </para>
             </summary>
         </member>
-        <member name="M:DiscordRPC.RichPresence.Clone">
-            <summary>
-            Clones the presence into a new instance. Used for thread safe writing and reading. This function will ignore properties if they are in a invalid state.
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:DiscordRPC.RichPresence.Merge(DiscordRPC.RichPresence)">
-            <summary>
-            Merges the passed presence with this one, taking into account the image key to image id annoyance.
-            </summary>
-            <param name="presence"></param>
-        </member>
-        <member name="M:DiscordRPC.RichPresence.Update(DiscordRPC.RichPresence)">
-            <summary>
-            Updates this presence with any values from the previous one
-            </summary>
-            <param name="presence"></param>
-        </member>
-        <member name="M:DiscordRPC.RichPresence.HasTimestamps">
+        <member name="M:DiscordRPC.BaseRichPresence.HasTimestamps">
             <summary>
             Does the Rich Presence have valid timestamps?
             </summary>
             <returns></returns>
         </member>
-        <member name="M:DiscordRPC.RichPresence.HasAssets">
+        <member name="M:DiscordRPC.BaseRichPresence.HasAssets">
             <summary>
             Does the Rich Presence have valid assets?
             </summary>
             <returns></returns>
         </member>
-        <member name="M:DiscordRPC.RichPresence.HasParty">
+        <member name="M:DiscordRPC.BaseRichPresence.HasParty">
             <summary>
             Does the Rich Presence have a valid party?
             </summary>
             <returns></returns>
         </member>
-        <member name="M:DiscordRPC.RichPresence.HasSecrets">
+        <member name="M:DiscordRPC.BaseRichPresence.HasSecrets">
             <summary>
             Does the Rich Presence have valid secrets?
             </summary>
             <returns></returns>
         </member>
-        <member name="M:DiscordRPC.RichPresence.WithState(System.String)">
-            <summary>
-            Sets the state of the Rich Presence. See also <seealso cref="P:DiscordRPC.RichPresence.State"/>.
-            </summary>
-            <param name="state">The user's current <see cref="P:DiscordRPC.RichPresence.Party"/> status.</param>
-            <returns>The modified Rich Presence.</returns>
-        </member>
-        <member name="M:DiscordRPC.RichPresence.WithDetails(System.String)">
-            <summary>
-            Sets the details of the Rich Presence. See also <seealso cref="P:DiscordRPC.RichPresence.Details"/>.
-            </summary>
-            <param name="details">What the user is currently doing.</param>
-            <returns>The modified Rich Presence.</returns>
-        </member>
-        <member name="M:DiscordRPC.RichPresence.WithTimestamps(DiscordRPC.Timestamps)">
-            <summary>
-            Sets the timestamp of the Rich Presence. See also <seealso cref="P:DiscordRPC.RichPresence.Timestamps"/>.
-            </summary>
-            <param name="timestamps">The time elapsed / remaining time data.</param>
-            <returns>The modified Rich Presence.</returns>
-        </member>
-        <member name="M:DiscordRPC.RichPresence.WithAssets(DiscordRPC.Assets)">
-            <summary>
-            Sets the assets of the Rich Presence. See also <seealso cref="P:DiscordRPC.RichPresence.Assets"/>.
-            </summary>
-            <param name="assets">The names of the images to use and the tooltips to give those images.</param>
-            <returns>The modified Rich Presence.</returns>
-        </member>
-        <member name="M:DiscordRPC.RichPresence.WithParty(DiscordRPC.Party)">
-            <summary>
-            Sets the Rich Presence's party. See also <seealso cref="P:DiscordRPC.RichPresence.Party"/>.
-            </summary>
-            <param name="party">The party the player is currently in.</param>
-            <returns>The modified Rich Presence.</returns>
-        </member>
-        <member name="M:DiscordRPC.RichPresence.WithSecrets(DiscordRPC.Secrets)">
-            <summary>
-            Sets the Rich Presence's secrets. See also <seealso cref="P:DiscordRPC.RichPresence.Secrets"/>.
-            </summary>
-            <param name="secrets">The secrets used for Join / Spectate.</param>
-            <returns>The modified Rich Presence.</returns>
-        </member>
-        <member name="M:DiscordRPC.RichPresence.ValidateString(System.String,System.String@,System.Int32,System.Text.Encoding)">
+        <member name="M:DiscordRPC.BaseRichPresence.ValidateString(System.String,System.String@,System.Int32,System.Text.Encoding)">
             <summary>
             Attempts to call <see cref="M:DiscordRPC.Helper.StringTools.GetNullOrString(System.String)"/> on the string and return the result, if its within a valid length.
             </summary>
@@ -1648,13 +1594,13 @@
             <param name="encoding">The encoding to count the bytes with</param>
             <returns>True if the string fits within the number of bytes</returns>
         </member>
-        <member name="M:DiscordRPC.RichPresence.op_Implicit(DiscordRPC.RichPresence)~System.Boolean">
+        <member name="M:DiscordRPC.BaseRichPresence.op_Implicit(DiscordRPC.BaseRichPresence)~System.Boolean">
             <summary>
             Operator that converts a presence into a boolean for null checks.
             </summary>
             <param name="presesnce"></param>
         </member>
-        <member name="M:DiscordRPC.RichPresence.Matches(DiscordRPC.RichPresence)">
+        <member name="M:DiscordRPC.BaseRichPresence.Matches(DiscordRPC.RichPresence)">
             <summary>
             Checks if the other rich presence differs from the current one
             </summary>
@@ -1872,6 +1818,101 @@
             <summary>
             The privacy of the party
             </summary>
+        </member>
+        <member name="T:DiscordRPC.Button">
+            <summary>
+            A Rich Presence button.
+            </summary>
+        </member>
+        <member name="P:DiscordRPC.Button.Label">
+            <summary>
+            Text shown on the button
+            <para>Max 32 bytes.</para>
+            </summary>
+        </member>
+        <member name="P:DiscordRPC.Button.Url">
+            <summary>
+            The URL opened when clicking the button.
+            <para>Max 512 bytes.</para>
+            </summary>
+        </member>
+        <member name="T:DiscordRPC.RichPresence">
+            <summary>
+            The Rich Presence structure that will be sent and received by Discord. Use this class to build your presence and update it appropriately.
+            </summary>
+        </member>
+        <member name="P:DiscordRPC.RichPresence.Buttons">
+            <summary>
+            The buttons to display in the presence. 
+            <para>Max of 2</para>
+            </summary>
+        </member>
+        <member name="M:DiscordRPC.RichPresence.HasButtons">
+            <summary>
+            Does the Rich Presence have any buttons?
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DiscordRPC.RichPresence.WithState(System.String)">
+            <summary>
+            Sets the state of the Rich Presence. See also <seealso cref="P:DiscordRPC.BaseRichPresence.State"/>.
+            </summary>
+            <param name="state">The user's current <see cref="T:DiscordRPC.Party"/> status.</param>
+            <returns>The modified Rich Presence.</returns>
+        </member>
+        <member name="M:DiscordRPC.RichPresence.WithDetails(System.String)">
+            <summary>
+            Sets the details of the Rich Presence. See also <seealso cref="P:DiscordRPC.BaseRichPresence.Details"/>.
+            </summary>
+            <param name="details">What the user is currently doing.</param>
+            <returns>The modified Rich Presence.</returns>
+        </member>
+        <member name="M:DiscordRPC.RichPresence.WithTimestamps(DiscordRPC.Timestamps)">
+            <summary>
+            Sets the timestamp of the Rich Presence. See also <seealso cref="T:DiscordRPC.Timestamps"/>.
+            </summary>
+            <param name="timestamps">The time elapsed / remaining time data.</param>
+            <returns>The modified Rich Presence.</returns>
+        </member>
+        <member name="M:DiscordRPC.RichPresence.WithAssets(DiscordRPC.Assets)">
+            <summary>
+            Sets the assets of the Rich Presence. See also <seealso cref="T:DiscordRPC.Assets"/>.
+            </summary>
+            <param name="assets">The names of the images to use and the tooltips to give those images.</param>
+            <returns>The modified Rich Presence.</returns>
+        </member>
+        <member name="M:DiscordRPC.RichPresence.WithParty(DiscordRPC.Party)">
+            <summary>
+            Sets the Rich Presence's party. See also <seealso cref="T:DiscordRPC.Party"/>.
+            </summary>
+            <param name="party">The party the player is currently in.</param>
+            <returns>The modified Rich Presence.</returns>
+        </member>
+        <member name="M:DiscordRPC.RichPresence.WithSecrets(DiscordRPC.Secrets)">
+            <summary>
+            Sets the Rich Presence's secrets. See also <seealso cref="T:DiscordRPC.Secrets"/>.
+            </summary>
+            <param name="secrets">The secrets used for Join / Spectate.</param>
+            <returns>The modified Rich Presence.</returns>
+        </member>
+        <member name="M:DiscordRPC.RichPresence.Clone">
+            <summary>
+            Clones the presence into a new instance. Used for thread safe writing and reading. This function will ignore properties if they are in a invalid state.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DiscordRPC.RichPresence.Merge(DiscordRPC.BaseRichPresence)">
+            <summary>
+            Merges the passed presence with this one, taking into account the image key to image id annoyance.
+            </summary>
+            <param name="presence"></param>
+            <returns>self</returns>
+        </member>
+        <member name="M:DiscordRPC.RichPresence.op_Implicit(DiscordRPC.RichPresence)~System.Boolean">
+            <summary>
+            Operator that converts a presence into a boolean for null checks.
+            </summary>
+            <param name="presesnce"></param>
         </member>
         <member name="T:DiscordRPC.RichPresenceResponse">
             <summary>

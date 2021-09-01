@@ -1,0 +1,57 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=C_003A_005CUsers_005Cjoshu_005CDesktop_005CProjects_005CDlls_005CBunifu_005FUI_005Fv1_002E5_002E3_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=C_003A_005CUsers_005Cjoshu_005CDesktop_005CProjects_005CDlls_005CGuna_002EUI2_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=C_003A_005CUsers_005Cjoshu_005CDesktop_005CProjects_005CDlls_005CGuna_002EUI_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=C_003A_005CUsers_005Cjoshu_005CDesktop_005CProjects_005CDlls_005CSiticone_002EUI_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=C_003A_005CUsers_005Cjoshu_005CDesktop_005CProjects_005CProjectPlatoV2_0020_002D_0020Copy_005CProjectPlatoV2_005Cbin_005CRelease_005Cnetcoreapp3_002E1_005Cruntimes_005Cwin_005Clib_005Cnetcoreapp3_002E0_005CSystem_002EDrawing_002ECommon_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=C_003A_005CUsers_005Cjoshu_005CDesktop_005CProjects_005CProjectPlatoV2_0020_002D_0020Copy_005CProjectPlatoV2_005Cbin_005CRelease_005Cnetcoreapp3_002E1_005Cwin_002Dx64_005CCUE4Parse_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=C_003A_005CUsers_005Cjoshu_005CDesktop_005CProjects_005CProjectPlatoV2_005CCUE4Parse_002DConversion_005Cbin_005CRelease_005Cnetstandard2_002E1_005CCUE4Parse_002DConversion_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=C_003A_005CUsers_005Cjoshu_005CDesktop_005CProjects_005CProjectPlatoV2_005CCUE4Parse_002DFortnite_005Cbin_005CRelease_005Cnetstandard2_002E1_005CCUE4Parse_002DFortnite_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=C_003A_005CUsers_005Cjoshu_005CDesktop_005CProjects_005CProjectPlatoV2_005CCUE4Parse_005Cbin_005CRelease_005Cnetstandard2_002E1_005CCUE4Parse_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=C_003A_005CUsers_005Cjoshu_005CDownloads_005CGuna_002EUI2_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=C_003A_005CUsers_005Cjoshu_005CDownloads_005Cguna_005Cguna_005CGuna_0020UI_0020Framework_0020Ultimate_00202_002E0_002E0_002E1_005Csrc_005CGuna_002EUI2_0020WinForms_005C_002Enet_00204_002E0_005CGuna_002EUI2_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=C_003A_005CUsers_005Cjoshu_005CDownloads_005Cguna_005Cguna_005CGuna_005FUI_005Fv2_002E0_002E0_002E6_005CGuna_002EUI2_002EWinForms_005Fv2_002E0_002E0_002E6_005C_002Enet_00202_002E0_005CGuna_002EUI2_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=C_003A_005CUsers_005Cjoshu_005CDownloads_005CSiticone_002EUI_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/CodeInspection/Highlighting/SweaWarningsMode/@EntryValue">DoNotShowAndRun</s:String>
+	<s:String x:Key="/Default/Environment/AssemblyExplorer/XmlDocument/@EntryValue">&lt;AssemblyExplorer&gt;&#xD;
+  &lt;Assembly Path="C:\Users\joshu\Downloads\Siticone.UI.dll" /&gt;&#xD;
+&lt;/AssemblyExplorer&gt;</s:String>
+	<s:String x:Key="/Default/Environment/Hierarchy/Build/BuildTool/CustomBuildToolPath/@EntryValue">C:\Program Files\dotnet\sdk\6.0.100-preview.7.21379.14\MSBuild.dll</s:String>
+	
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=ProjectPlatoV2_002FForms_002FAlertBox/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=ProjectPlatoV2_002FForms_002FAPIPickaxes/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=ProjectPlatoV2_002FForms_002FAPISkins/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=ProjectPlatoV2_002FForms_002FAPISkinsSecond/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=ProjectPlatoV2_002FForms_002FBackblings/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=ProjectPlatoV2_002FForms_002FDarkMessageBox/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=ProjectPlatoV2_002FForms_002FExtra/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=ProjectPlatoV2_002FForms_002FHome/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=ProjectPlatoV2_002FForms_002FItems_002FBackblings_002FBattleShroud/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=ProjectPlatoV2_002FForms_002FItems_002FBackblings_002FBlackShieldDark/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=ProjectPlatoV2_002FForms_002FItems_002FBackblings_002FBlackShieldFrozen/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=ProjectPlatoV2_002FForms_002FItems_002FBackblings_002FBlackShieldOptions/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=ProjectPlatoV2_002FForms_002FItems_002FBackblings_002FBlackShieldRedShield/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=ProjectPlatoV2_002FForms_002FItems_002FBackblings_002FHazardBow/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=ProjectPlatoV2_002FForms_002FItems_002FBackblings_002FIronCage/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=ProjectPlatoV2_002FForms_002FItems_002FBackblings_002FLoveWings/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=ProjectPlatoV2_002FForms_002FItems_002FBackTemplate_002FBackblingAPI/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=ProjectPlatoV2_002FForms_002FItems_002FMisc_002FTheOG/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=ProjectPlatoV2_002FForms_002FItems_002FPickaxeTemplate_002FPickaxeAPI/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=ProjectPlatoV2_002FForms_002FItems_002FSkinTemplate_002FSkinAPI/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=ProjectPlatoV2_002FForms_002FKey/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=ProjectPlatoV2_002FForms_002FLoader/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=ProjectPlatoV2_002FForms_002FLogin/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=ProjectPlatoV2_002FForms_002FNews/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=ProjectPlatoV2_002FForms_002FOptions/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=ProjectPlatoV2_002FForms_002FV2_002FEmotes_002FEmotes/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=ProjectPlatoV2_002FForms_002FV2_002FItems_002FSkinSwapper/@EntryIndexedValue">True</s:Boolean>
+	
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=ProjectPlatoV2_002FForms_002FV2_002FMain/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=ProjectPlatoV2_002FProperties_002FResources/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/Initialized/@EntryValue">True</s:Boolean>
+	
+	
+	
+	
+	
+	</wpf:ResourceDictionary>

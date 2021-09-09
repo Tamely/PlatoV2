@@ -11,6 +11,7 @@ The most advanced Fortnite Skin Changer to this date.
 # ![Credits](https://raw.githubusercontent.com/Tamely/PlatoV2/main/ProjectPlatoV2/GitHub/Credits.png?raw=true)
 - @TamelyFN on Twitter
 - @Tamely#6469 on Discord
+- [CUE4Parse](https://github.com/FabianFG/CUE4Parse) on GitHub
 # ![Features](https://raw.githubusercontent.com/Tamely/PlatoV2/main/ProjectPlatoV2/GitHub/Features.png?raw=true)
 - Asset Exporter so the swaps never break
 - Oodle Compressor to work on the latest versions of Fortnite
@@ -22,5 +23,5 @@ The most advanced Fortnite Skin Changer to this date.
 This order also applies in the startup order.
 
 - [.NET 5](https://dotnet.microsoft.com/download/dotnet/thank-you/sdk-5.0.400-windows-x64-installer)
-
 - Visual Studio or any C# IDE (I prefer [Jetbrains Rider](https://www.jetbrains.com/rider/))
+- [CUE4Parse](https://github.com/FabianFG/CUE4Parse) on GitHub (Add it as a reference to the .csproj for the program to build!)

@@ -6,7 +6,7 @@ The most advanced Fortnite Skin Changer to this date.
 - You are NOT authorized to modify/distribute Project Plato.
 - If you would like to add contributions, create a pull request or open a new issue.
 # ![Links and Support](https://github.com/Tamely/PlatoV2/blob/main/ProjectPlatoV2/GitHub/LinksEtSupport.png?raw=true)
-- For support and guidance, join my Discord.
+- For support and guidance, join my [Discord](https://discord.gg/projectplato).
 - My Discord username: Tamely#6469
 # ![Credits](https://raw.githubusercontent.com/Tamely/PlatoV2/main/ProjectPlatoV2/GitHub/Credits.png?raw=true)
 - @TamelyFN on Twitter
